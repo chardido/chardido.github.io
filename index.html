@@ -2,11 +2,93 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Supporto - Gira la Ruota</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gira la Ruota – Supporto</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f7f4; color: #1a1a1a; min-height: 100vh; }
+    a { color: #e05c2e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero { background: #1a1a2e; color: #fff; padding: 3rem 1.5rem; text-align: center; }
+    .hero-icon { font-size: 52px; margin-bottom: 1rem; }
+    .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1rem; color: rgba(255,255,255,0.65); }
+    .container { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    .card { background: #fff; border-radius: 14px; border: 1px solid #e0ddd6; padding: 1.5rem; margin-bottom: 1.25rem; }
+    .card-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #a09a90; margin-bottom: 1rem; }
+    .faq-item { padding: 0.9rem 0; border-bottom: 1px solid #f0ede8; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 500; font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .faq-a { font-size: 0.9rem; color: #6b6560; line-height: 1.6; }
+    .contact-row { display: flex; align-items: center; gap: 12px; padding: 0.75rem 0; }
+    .contact-row:not(:last-child) { border-bottom: 1px solid #f0ede8; }
+    .contact-icon { width: 36px; height: 36px; border-radius: 8px; background: #fff5f0; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+    .contact-label { font-size: 0.8rem; color: #a09a90; }
+    .contact-value { font-size: 0.95rem; font-weight: 500; }
+    .badge { display: inline-block; background: #f0ede8; color: #6b6560; font-size: 0.75rem; padding: 3px 10px; border-radius: 20px; margin-right: 6px; margin-top: 6px; }
+    footer { text-align: center; padding: 2rem 1.5rem; font-size: 0.8rem; color: #b0aa9f; }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.5rem; }
+      .container { padding: 1.5rem 1rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Gira la Ruota - Supporto</h1>
-  <p>Per assistenza o segnalazioni scrivici a: <a href="mailto:chardido93@hotmail.it">chardido93@hotmail.it</a></p>
-  <p>Per richiedere la cancellazione dei tuoi dati contattaci allo stesso indirizzo.</p>
+
+<div class="hero">
+  <div class="hero-icon">🎡</div>
+  <h1>Gira la Ruota</h1>
+  <p>Pagina di supporto ufficiale</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <div class="card-title">Contatti</div>
+    <div class="contact-row">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Email supporto</div>
+        <div class="contact-value"><a href="mailto:TUA@EMAIL.COM">TUA@EMAIL.COM</a></div>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-icon">⏱️</div>
+      <div>
+        <div class="contact-label">Tempo di risposta</div>
+        <div class="contact-value">Entro 48 ore</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Domande frequenti</div>
+    <div class="faq-item">
+      <div class="faq-q">L'app non funziona correttamente. Cosa faccio?</div>
+      <div class="faq-a">Prova a chiudere e riaprire l'app. Se il problema persiste, contattaci via email descrivendo il problema e il dispositivo utilizzato.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Come vengono gestiti i miei dati?</div>
+      <div class="faq-a">L'app non raccoglie dati personali identificabili. Consulta la nostra informativa sulla privacy per maggiori dettagli.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Voglio che i miei dati vengano eliminati.</div>
+      <div class="faq-a">Scrivici all'indirizzo email indicato con oggetto "Richiesta cancellazione dati" e provvederemo entro 30 giorni.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Compatibilità</div>
+    <div style="display:flex;flex-wrap:wrap;padding-top:0.25rem;">
+      <span class="badge">iOS 15+</span>
+      <span class="badge">iPhone</span>
+      <span class="badge">iPad</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2025 Gira la Ruota · Tutti i diritti riservati</footer>
+
 </body>
 </html>
